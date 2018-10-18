@@ -2,12 +2,21 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+// colour palette
+// background - #1D5F68
+// header text - #01A0B6
+// body text - #027889
+
+//****************//
+
 // background
 body {
   background: #1D5F68;
   width: 100%;
   height: 100%;
 }
+
+//****************//
 
 // Nav bar
 nav {
@@ -42,3 +51,5 @@ nav > li, a:hover, a:active {
   border-bottom: solid 2px #243E42;
   color: #243E42;
 }
+
+//****************//
