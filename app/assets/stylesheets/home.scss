@@ -60,10 +60,22 @@ nav > li, a {
 }
 
 // List items when hovered, or clicked
-nav > li, a:hover, a:active {
+.active {
   border-bottom: solid 2px #243E42;
   color: #243E42;
 }
+
+.topnav .icon {
+    display: none;
+}
+
+@media only screen and (max-width: 900px) {
+    /* For mobile phones: */
+    nav > ul {
+        display: block;
+    }
+}
+
 
 //****************//
 
