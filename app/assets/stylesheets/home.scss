@@ -58,10 +58,11 @@ body {
 .topnav > li, a {
   text-decoration: none;
   color: #01A0B6;
+  text-align: center;
 }
 
 // List items when hovered, or clicked
-.active {
+.topnav > li, a:hover {
   border-bottom: solid 2px #243E42;
   color: #243E42;
 }
