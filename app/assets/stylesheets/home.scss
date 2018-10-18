@@ -2,6 +2,7 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+// Nav bar
 nav {
   position: fixed;
   top: 0;
@@ -14,8 +15,16 @@ nav {
   box-shadow: 0 7px 20px 0 rgba(0,0,0,0.2), 0 4px 10px 0 rgba(0,0,0,0.2);
 }
 
+// Unordered list of nav bar
 nav > ul {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   list-style-type: none;
+  margin-left: 33%;
+  margin-right: 33%;
+}
+
+// List items in the nav bar
+nav > li {
+
 }
