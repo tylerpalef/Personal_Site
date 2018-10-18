@@ -16,6 +16,7 @@ html {
 
 h1 {
   color: #01A0B6;
+  text-shadow: 2px 2px #1D5F68;
 }
 
 p {
@@ -67,6 +68,7 @@ body {
   color: #243E42;
 }
 
+// Responsive-ness for the nav bar
 @media screen and (max-width: 950px) {
   .topnav > ul {
     margin: auto;
@@ -78,15 +80,20 @@ body {
   }
 }
 
-
-
-
-
 //****************//
 
 // main content
 
 .container {
   text-align: center;
-  margin-top: 5em;
+  padding-top: 2.5em;
+  background-color: #fff5ee;
+  height: 100%;
+  margin-left: 15%;
+  margin-right: 15%;
+}
+
+.content {
+  margin-left: 10%;
+  margin-right: 10%;
 }
