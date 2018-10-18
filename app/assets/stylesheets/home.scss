@@ -67,16 +67,19 @@ body {
   color: #243E42;
 }
 
-.topnav .icon {
-    display: none;
+@media screen and (max-width: 950px) {
+  .topnav > ul {
+    margin: auto;
+    padding-left: 0;
+  }
+  .topnav {
+    height: 5%;
+    padding-top: 5%;
+  }
 }
 
-@media only screen and (max-width: 900px) {
-    /* For mobile phones: */
-    .topnav > ul {
-        display: block;
-    }
-}
+
+
 
 
 //****************//
