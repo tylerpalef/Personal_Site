@@ -95,6 +95,7 @@ body {
   .topnav {
     height: 5%;
     padding-top: 3%;
+    padding-bottom: 3%;
   }
 }
 
@@ -109,6 +110,10 @@ body {
   text-transform: uppercase;
 }
 
+.intro > img {
+  width: 250px;
+  border-radius: 50%;
+}
 //****************//
 
 // main content
