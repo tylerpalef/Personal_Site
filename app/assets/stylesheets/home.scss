@@ -68,15 +68,31 @@ body {
   color: #243E42;
 }
 
-// Responsive-ness for the nav bar
-@media screen and (max-width: 950px) {
+// Responsive-ness for the nav bar at 950px
+@media screen and (max-width: 1100px) {
   .topnav > ul {
     margin: auto;
     padding-left: 0;
+    padding-left: 33%;
+    padding-right: 33%;
   }
   .topnav {
     height: 5%;
-    padding-top: 5%;
+    padding-top: 2.5%;
+    padding-bottom: .5%;
+  }
+}
+
+// Responsive-ness for the nav bar at 950px
+@media screen and (max-width: 950px) {
+  .topnav > ul {
+    margin: auto;
+    padding-left: 15%;
+    padding-right: 15%
+  }
+  .topnav {
+    height: 5%;
+    padding-top: 3%;
   }
 }
 
