@@ -70,35 +70,6 @@ body {
   color: #243E42;
 }
 
-// Responsive-ness for the nav bar at 950px
-@media screen and (max-width: 1100px) {
-  .topnav > ul {
-    margin: auto;
-    padding-left: 0;
-    padding-left: 33%;
-    padding-right: 33%;
-  }
-  .topnav {
-    height: 5%;
-    padding-top: 2.5%;
-    padding-bottom: .5%;
-  }
-}
-
-// Responsive-ness for the nav bar at 950px
-@media screen and (max-width: 950px) {
-  .topnav > ul {
-    margin: auto;
-    padding-left: 15%;
-    padding-right: 15%
-  }
-  .topnav {
-    height: 5%;
-    padding-top: 3%;
-    padding-bottom: 3%;
-  }
-}
-
 //****************//
 
 // Intro section
@@ -113,7 +84,19 @@ body {
 .intro > img {
   width: 250px;
   border-radius: 50%;
+  margin-top: 10%;
 }
+
+.intro > h1, h2 {
+  margin-bottom: -8%;
+}
+
+.intro > h1 {
+  font-stretch: expanded;
+  font-size: 200px;
+  margin-top: 0;
+}
+
 //****************//
 
 // main content
@@ -130,4 +113,41 @@ body {
 .content {
   margin-left: 10%;
   margin-right: 10%;
+}
+
+//****************//
+
+// Responsive-ness for the nav bar at 1100px
+@media screen and (max-width: 1100px) {
+  .topnav > ul {
+    margin: auto;
+    padding-left: 0;
+    padding-left: 33%;
+    padding-right: 33%;
+  }
+  .topnav {
+    height: 5%;
+    padding-top: 2.5%;
+    padding-bottom: .5%;
+  }
+  .intro > h1 {
+    font-size: 150px;
+  }
+}
+
+// Responsive-ness for the nav bar at 950px
+@media screen and (max-width: 950px) {
+  .topnav > ul {
+    margin: auto;
+    padding-left: 15%;
+    padding-right: 15%
+  }
+  .topnav {
+    height: 5%;
+    padding-top: 3%;
+    padding-bottom: 3%;
+  }
+  .intro > h1 {
+    font-size: 90px;
+  }
 }
