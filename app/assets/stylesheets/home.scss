@@ -10,14 +10,16 @@
 //****************//
 
 html {
-  font-family: 'Roboto', sans-serif;
   box-sizing: content-box;
+  font-family: 'Oswald', sans-serif;
 }
 
-h1 {
+h1, h2 {
   color: #01A0B6;
   text-shadow: 2px 2px #1D5F68;
+  font-family: 'Amatic SC', cursive;
 }
+
 
 p {
   color: #027889;
