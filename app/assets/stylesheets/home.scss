@@ -152,6 +152,11 @@ body {
   padding-top: 5%;
 }
 
+.githubprojects > img {
+  width: 200px;
+  text-align: center;
+}
+
 .project-part-2 {
   text-align: left;
 }
@@ -205,5 +210,8 @@ body {
 @media screen and (max-width: 950px) {
   .githubprojects {
     grid-template-columns: 1fr;
+  }
+  .githubprojects > img {
+    display: none;
   }
 }
