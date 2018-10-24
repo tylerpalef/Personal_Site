@@ -280,18 +280,31 @@ h1{
   background-color: #131515;
   position: absolute;
   width: 100%;
+  padding-left: 0;
+}
+
+.footer > p {
+  color: #fff5ee;
 }
 
 .footer-icons{
   display: inline-flex;
   width: 100%;
   text-align: center;
+  padding-left: 42%;
 }
 .footer-icons > p {
   padding-left: 2.5%;
   padding-right: 2.5%;
 }
 
+
+@media screen and (max-width: 950px) {
+  .footer-icons {
+  display: block;
+  padding-left: 0;
+  }
+}
 
 
 // Back to top button
