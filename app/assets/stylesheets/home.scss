@@ -1,64 +1,57 @@
 // Place all the styles related to the home controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
-
 // colour palette
 // background - #1D5F68
 // header text - #01A0B6
 // body text - #027889
-
 //****************//
-
 html {
   box-sizing: content-box;
   font-family: 'Oswald', sans-serif;
 }
 
-h1, h2 {
+h1,
+h2 {
   color: #01A0B6;
   text-shadow: 2px 2px #1D5F68;
   font-family: 'Amatic SC', cursive;
 }
 
 b {
-font-size: 27px;}
-
+  font-size: 27px;
+}
 // Adding a bottom border for the headers
 #home > h1 {
   border-bottom: 2px solid #1D5F68;
-  padding-bottom: 0px;
+  padding-bottom: 0;
 }
 
 #projects > h1 {
   border-bottom: 2px solid #1D5F68;
-  padding-bottom: 0px;
+  padding-bottom: 0;
 }
 
 #about > h1 {
   border-bottom: 2px solid #1D5F68;
-  padding-bottom: 0px;
+  padding-bottom: 0;
 }
 
 #resume > h1 {
   border-bottom: 2px solid #1D5F68;
-  padding-bottom: 0px;
+  padding-bottom: 0;
 }
-
-
 
 p {
   color: #027889;
 }
-
 // background
 body {
   background: #1D5F68;
   width: 100%;
   height: 100%;
 }
-
 //****************//
-
 // Nav bar
 .topnav {
   position: fixed;
@@ -72,7 +65,6 @@ body {
   box-shadow: 0 7px 20px 0 rgba(0,0,0,0.2), 0 4px 10px 0 rgba(0,0,0,0.2);
   overflow: hidden;
 }
-
 // Unordered list of nav bar
 .topnav > ul {
   display: grid;
@@ -81,28 +73,25 @@ body {
   margin-left: 33%;
   margin-right: 33%;
 }
-
 // List items in the nav bar
-.topnav > li, a {
+.topnav > li,
+a {
   text-decoration: none;
   color: #01A0B6;
   text-align: center;
 }
-
 // List items when hovered, or clicked
-.topnav > li, a:hover {
+.topnav > li,
+a:hover {
   border-bottom: solid 2px #243E42;
   color: #243E42;
 }
 
-h1{
+h1 {
   font-size: 80px;
 }
-
 //****************//
-
 // Intro section
-
 .intro {
   width: 100%;
   height: 100%;
@@ -116,7 +105,8 @@ h1{
   margin-top: 10%;
 }
 
-.intro > h1, h2 {
+.intro > h1,
+h2 {
   margin-bottom: -8%;
 }
 
@@ -125,11 +115,8 @@ h1{
   font-size: 200px;
   margin-top: 0;
 }
-
 //****************//
-
 // main content
-
 .container {
   text-align: center;
   padding-top: 2.5em;
@@ -169,9 +156,7 @@ h1{
 .project-part-2 {
   text-align: left;
 }
-
 //****************//
-
 // Responsive-ness for the nav bar at 1100px
 @media screen and (max-width: 1100px) {
   .topnav > ul {
@@ -180,16 +165,17 @@ h1{
     padding-left: 33%;
     padding-right: 33%;
   }
+
   .topnav {
     height: 5%;
     padding-top: 2.5%;
-    padding-bottom: .5%;
+    padding-bottom: 0.5%;
   }
+
   .intro > h1 {
     font-size: 150px;
   }
 }
-
 // Responsive-ness for the nav bar at 950px
 @media screen and (max-width: 950px) {
   .topnav > ul {
@@ -197,83 +183,98 @@ h1{
     padding-left: 15%;
     padding-right: 15%;
   }
+
   .topnav {
     height: 5%;
     padding-top: 3%;
     padding-bottom: 3%;
   }
+
   .intro > h1 {
     font-size: 90px;
   }
 }
-
-
 // Projects... Github section
-
 .githubprojects {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
 }
-
 // Responsive-ness to the projects
 @media screen and (max-width: 950px) {
   .githubprojects {
     grid-template-columns: 1fr;
   }
+
   .githubprojects > img {
     display: none;
   }
+
   #projects > img {
     width: 100%;
   }
 }
 // Need to add responsiveness for the codewars img
+// About Portion
+.about-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
 
- // About Portion
-
- .about-grid {
-   display: grid;
-   grid-template-columns: 1fr 1fr;
- }
-
- .about-pic > img {
-   width: 100%;
-   box-shadow: 5px 10px #1D5F68;
- }
-
+.about-pic > img {
+  width: 100%;
+  box-shadow: 5px 10px #1D5F68;
+}
 @media screen and (max-width: 950px) {
   .about-grid {
-  grid-template-columns: 1fr;
-}
+    grid-template-columns: 1fr;
+  }
+
   .about-pic > img {
     display: none;
   }
 }
-
 // Resume section
-
 /* Make sure that padding behaves as expected */
-* {box-sizing:border-box}
-
+* {
+  box-sizing: border-box;
+}
 /* Container for skill bars */
 .resume-container {
-    width: 100%; /* Full width */
-    background-color: #ddd; /* Grey background */
+  width: 100%;
+  /* Full width */
+  background-color: #ddd;
+  /* Grey background */
 }
 
 .skills {
-    text-align: right; /* Right-align text */
-    padding: 10px; /* Add some padding */
-    color: white; /* White text color */
+  text-align: right;
+  /* Right-align text */
+  padding: 10px;
+  /* Add some padding */
+  color: white;
+  /* White text color */
 }
 
-.html {width: 90%; background-color: #01A0B6;}
-.css {width: 80%; background-color: #01A0B6;}
-.js {width: 65%; background-color: #01A0B6;}
-.ruby {width: 80%; background-color: #01A0B6;}
+.html {
+  width: 90%;
+  background-color: #01A0B6;
+}
 
+.css {
+  width: 80%;
+  background-color: #01A0B6;
+}
+
+.js {
+  width: 65%;
+  background-color: #01A0B6;
+}
+
+.ruby {
+  width: 80%;
+  background-color: #01A0B6;
+}
 // Footer Section
-
 .footer {
   margin: 0 auto;
   text-align: center;
@@ -289,7 +290,7 @@ h1{
   padding-bottom: 6px;
 }
 
-.footer-icons{
+.footer-icons {
   display: inline-flex;
   width: 100%;
   text-align: center;
@@ -297,38 +298,54 @@ h1{
   padding-top: 0;
   padding-bottom: 0;
 }
+
 .footer-icons > p {
   padding-left: 2.5%;
   padding-right: 2.5%;
 }
-
-
 @media screen and (max-width: 950px) {
   .footer-icons {
-  display: block;
-  padding-left: 0;
+    display: block;
+    padding-left: 0;
   }
 }
 
-
+.copy > p {
+  color: #1D5F68;
+  font-size: 15px;
+}
 // Back to top button
 
 #myBtn {
-    display: none; /* Hidden by default */
-    position: fixed; /* Fixed/sticky position */
-    bottom: 20px; /* Place the button at the bottom of the page */
-    right: 55px; /* Place the button 30px from the right */
-    z-index: 99; /* Make sure it does not overlap */
-    border: none; /* Remove borders */
-    outline: none; /* Remove outline */
-    background-color: #027889; /* Set a background color */
-    color: white; /* Text color */
-    cursor: pointer; /* Add a mouse pointer on hover */
-    padding: 15px; /* Some padding */
-    border-radius: 10px; /* Rounded corners */
-    font-size: 18px; /* Increase font size */
+  display: none;
+  /* Hidden by default */
+  position: fixed;
+  /* Fixed/sticky position */
+  bottom: 20px;
+  /* Place the button at the bottom of the page */
+  right: 55px;
+  /* Place the button 30px from the right */
+  z-index: 99;
+  /* Make sure it does not overlap */
+  border: none;
+  /* Remove borders */
+  outline: none;
+  /* Remove outline */
+  background-color: #027889;
+  /* Set a background color */
+  color: white;
+  /* Text color */
+  cursor: pointer;
+  /* Add a mouse pointer on hover */
+  padding: 15px;
+  /* Some padding */
+  border-radius: 10px;
+  /* Rounded corners */
+  font-size: 18px;
+  /* Increase font size */
 }
 
 #myBtn:hover {
-    background-color: #555; /* Add a dark-grey background on hover */
+  background-color: #555;
+  /* Add a dark-grey background on hover */
 }
