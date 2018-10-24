@@ -20,6 +20,9 @@ h1, h2 {
   font-family: 'Amatic SC', cursive;
 }
 
+b {
+font-size: 27px;}
+
 // Adding a bottom border for the headers
 #home > h1 {
   border-bottom: 2px solid #1D5F68;
@@ -233,6 +236,15 @@ body {
    width: 100%;
    box-shadow: 5px 10px #1D5F68;
  }
+
+@media screen and (max-width: 950px) {
+  .about-grid {
+  grid-template-columns: 1fr;
+}
+  .about-pic > img {
+    display: none;
+  }
+}
 
 #myBtn {
     display: none; /* Hidden by default */
