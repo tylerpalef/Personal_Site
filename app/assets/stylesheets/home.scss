@@ -272,6 +272,30 @@ h1{
 .js {width: 65%; background-color: #01A0B6;}
 .ruby {width: 80%; background-color: #01A0B6;}
 
+// Footer Section
+
+.footer {
+  margin: 0 auto;
+  text-align: center;
+  background-color: #131515;
+  position: absolute;
+  width: 100%;
+}
+
+.footer-icons{
+  display: inline-flex;
+  width: 100%;
+  text-align: center;
+}
+.footer-icons > p {
+  padding-left: 2.5%;
+  padding-right: 2.5%;
+}
+
+
+
+// Back to top button
+
 #myBtn {
     display: none; /* Hidden by default */
     position: fixed; /* Fixed/sticky position */
