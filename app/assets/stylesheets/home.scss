@@ -216,6 +216,9 @@ body {
   .githubprojects > img {
     display: none;
   }
+  #projects > img {
+    width: 100%;
+  }
 }
 // Need to add responsiveness for the codewars img
 
