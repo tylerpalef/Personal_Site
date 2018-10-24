@@ -217,6 +217,19 @@ body {
     display: none;
   }
 }
+// Need to add responsiveness for the codewars img
+
+ // About Portion
+
+ .about-grid {
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+ }
+
+ .about-pic > img {
+   width: 100%;
+   box-shadow: 5px 10px #1D5F68;
+ }
 
 #myBtn {
     display: none; /* Hidden by default */
