@@ -100,7 +100,7 @@ h1 {
   text-transform: uppercase;
   margin: 0 auto;
   padding-right: 29%;
-  z-index: -1;
+  z-index: 1;
 }
 
 .intro > img {
@@ -109,8 +109,7 @@ h1 {
   margin-top: 10%;
 }
 
-.intro > h1,
-h2 {
+.intro > h1, h2 {
   margin-bottom: -8%;
 }
 
@@ -119,6 +118,7 @@ h2 {
   font-size: 200px;
   margin-top: 0;
 }
+
 //****************//
 // main content
 .container {
@@ -128,12 +128,22 @@ h2 {
   height: 100%;
   margin-left: 15%;
   margin-right: 15%;
+  z-index: 2;
+}
+.wrapper {
+  position: relative;
+  background-color: #fff5ee;
+  z-index: 2;
+  height: 100%;
+  top: 50em;
 }
 
 .content {
   margin-left: 10%;
   margin-right: 10%;
   margin-top: 10%;
+  z-index: 3;
+  position: relative;
 }
 
 #home > p {
@@ -280,12 +290,14 @@ h2 {
 }
 // Footer Section
 .footer {
+  position: relative;
   margin: 0 auto;
   text-align: center;
   background-color: #131515;
   position: absolute;
   width: 100%;
   padding-left: 0;
+  z-index: 101;
 }
 
 .footer > p {
