@@ -130,9 +130,25 @@ h1 {
   bottom: 30%;
   right: 42%;
 }
- 
+
+.arrow-left {
+ width: 0;
+ height: 0;
+ border-top: 10px solid transparent;
+ border-bottom: 10px solid transparent;
+ border-right:35px solid white;
+ visibility: hidden;
+ position: absolute;
+ z-index: 10;
+ bottom: 30%;
+ right: 52%;
+}
 
 .tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+
+.tooltip:hover .arrow-left {
   visibility: visible;
 }
 
