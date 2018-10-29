@@ -6,6 +6,7 @@
 // header text - #01A0B6
 // body text - #027889
 //****************//
+
 html {
   box-sizing: content-box;
   font-family: 'Oswald', sans-serif;
@@ -20,8 +21,10 @@ h2 {
 
 b {
   font-size: 27px;
+  color: #01A0B6;
 }
 // Adding a bottom border for the headers
+
 #home > h1 {
   border-bottom: 2px solid #1D5F68;
   padding-bottom: 0;
@@ -46,6 +49,7 @@ p {
   color: #027889;
 }
 // background
+
 body {
   background: #1D5F68;
   width: 100%;
@@ -53,6 +57,7 @@ body {
 }
 //****************//
 // Nav bar
+
 .topnav {
   position: fixed;
   top: 0;
@@ -66,6 +71,7 @@ body {
   overflow: hidden;
 }
 // Unordered list of nav bar
+
 .topnav > ul {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -74,6 +80,7 @@ body {
   margin-right: 33%;
 }
 // List items in the nav bar
+
 .topnav > li,
 a {
   text-decoration: none;
@@ -81,6 +88,7 @@ a {
   text-align: center;
 }
 // List items when hovered, or clicked
+
 .topnav > li,
 a:hover {
   border-bottom: solid 2px #243E42;
@@ -92,6 +100,7 @@ h1 {
 }
 //****************//
 // Intro section
+
 .intro {
   position: fixed;
   width: 100%;
@@ -103,13 +112,60 @@ h1 {
   z-index: 1;
 }
 
-.intro > img {
+.intro > .tooltip > img {
   width: 250px;
   border-radius: 50%;
   margin-top: 10%;
+  cursor: pointer;
+
+}
+/* Tooltip text */
+.tooltiptext {
+  visibility: hidden;
+  width: 150px;
+  background-color: white;
+  color: black;
+  text-align: center;
+  padding: 5px 0;
+  border-radius: 6px;
+  position: absolute;
+  z-index: 1;
+  bottom: 30%;
+  right: 42%;
 }
 
-.intro > h1, h2 {
+.arrow-left {
+ width: 0;
+ height: 0;
+ border-top: 10px solid transparent;
+ border-bottom: 10px solid transparent;
+ border-right:35px solid white;
+ visibility: hidden;
+ position: absolute;
+ z-index: 10;
+ bottom: 30%;
+ right: 52%;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+
+.tooltip:hover .arrow-left {
+  visibility: visible;
+}
+
+@media screen and (max-width: 950px) {
+  .tooltiptext {
+    bottom: 15%;
+  }
+  .arrow-left {
+    bottom: 15%;
+  }
+}
+
+.intro > h1,
+h2 {
   margin-bottom: -8%;
 }
 
@@ -118,9 +174,9 @@ h1 {
   font-size: 200px;
   margin-top: 0;
 }
-
 //****************//
 // main content
+
 .container {
   text-align: center;
   padding-top: 2.5em;
@@ -130,6 +186,7 @@ h1 {
   margin-right: 15%;
   z-index: 2;
 }
+
 .wrapper {
   position: relative;
   background-color: #fff5ee;
@@ -209,6 +266,7 @@ h1 {
   }
 }
 // Projects... Github section
+
 .githubprojects {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -229,6 +287,7 @@ h1 {
 }
 // Need to add responsiveness for the codewars img
 // About Portion
+
 .about-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -289,6 +348,7 @@ h1 {
   background-color: #01A0B6;
 }
 // Footer Section
+
 .footer {
   margin: 0 auto;
   text-align: center;
@@ -299,7 +359,7 @@ h1 {
   margin-top: 69%;
   padding-bottom: 2px;
   z-index: 1000;
-  }
+}
 
 .footer > p {
   color: #fff5ee;
@@ -327,7 +387,7 @@ h1 {
   }
 
   .footer {
-    margin-top: 110%;
+    margin-top: 240%;
   }
 }
 
