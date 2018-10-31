@@ -1,3 +1,6 @@
+*{
+  box-sizing: border-box;
+}
 // Back to top button
 
 #myBtn {
@@ -41,6 +44,8 @@
     width: 100%;
     background-color: red;
     height: 80%;
+    left: 0;
+    top: 0;
   }
 }
 
