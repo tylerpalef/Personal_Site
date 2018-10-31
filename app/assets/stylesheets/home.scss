@@ -60,5 +60,15 @@
     top: 97.6vh;
     background-color: grey;
   }
+
+  .back-to-top{
+    position: relative;
+    width: 100vw;
+    height: 100%;
+    left: -8px;
+    z-index: 3;
+    top: 95vh;
+    background-color: pink;
+  }
 }
 @media only screen and (max-width: 600px) {}
