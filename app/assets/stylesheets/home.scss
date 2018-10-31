@@ -34,3 +34,16 @@
   z-index: 2000;
   /* Add a dark-grey background on hover */
 }
+
+@media only screen and (max-width: 1210px) {
+  .hero{
+    position: fixed;
+    width: 100%;
+    background-color: red;
+    height: 80%;
+  }
+}
+
+  @media only screen and (max-width: 600px) {
+
+    }
