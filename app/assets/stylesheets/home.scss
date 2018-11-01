@@ -17,7 +17,7 @@
     position: fixed;
     z-index: 2;
     top: 0px;;
-    left: 35%;
+    left: 46%;
     color: white;
   }
 
@@ -98,11 +98,19 @@
     .hero{
       background-color: purple;
     }
+
+    .hero-name{
+      left: 46%;
+    }
   }
 
 @media all and (max-width: 1280px) {
   .hero{
     background-color: teal;
+  }
+
+  .hero-name{
+    left: 45%;
   }
 }
 @media all and (max-width: 980px) {
@@ -116,12 +124,13 @@
 
   .back-to-top{
   top: 92vh;
+  }
 
   .hero-name{
     left: 41%;
   }
 }
- }
+
 @media all and (max-width: 700px) {
   .hero{
     background-color: orange;
