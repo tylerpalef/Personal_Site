@@ -107,7 +107,7 @@
 }
 @media all and (max-width: 980px) {
   .hero{
-    background-color: yellow;
+    background-color: silver;
   }
 
   .about{
@@ -116,6 +116,10 @@
 
   .back-to-top{
   top: 92vh;
+
+  .hero-name{
+    left: 41%;
+  }
 }
  }
 @media all and (max-width: 700px) {
