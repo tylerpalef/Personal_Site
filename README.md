@@ -1,24 +1,9 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Next Steps:
 
-Things you may want to cover:
+Currently rebuilding the site to be more responsive and follow the design elements of https://www.kjgamis.com/
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+TO-DO:
+- HTML and CSS markup for the About, Tools and Project Section.
+- Also need to add animations to the sections. 
