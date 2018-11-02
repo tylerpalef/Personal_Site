@@ -41,7 +41,7 @@
 .hero-slogan > h1 {
   font-family: 'Lato', sans-serif;
   font-weight: 100;
-  padding-bottom: 20%;
+  padding-bottom: 4.8%;
   padding-top: 10%;
 }
 
@@ -202,6 +202,10 @@
     top: 93.5vh;
   }
 
+  .hero-slogan > h1 {
+    padding-bottom: 8.8%;
+  }
+
   .back-to-top {
     top: 90vh;
   }
@@ -213,6 +217,10 @@
 
   .hero-name {
     left: 45%;
+  }
+
+  .hero-slogan > h1 {
+    padding-bottom: 20.8%;
   }
 
   .projects {
@@ -240,6 +248,10 @@
     left: 41%;
   }
 
+  .hero-slogan > h1 {
+    padding-bottom: 26.8%;
+  }
+
   .projects {
     top: 93.5vh;
   }
@@ -259,6 +271,10 @@
 
   .hero-slogan {
     top: 14%;
+  }
+
+  .hero-slogan > h1 {
+    padding-bottom: 45.8%;
   }
 
   .about {
