@@ -1,9 +1,8 @@
 * {
   box-sizing: border-box;
 }
-
 // hero image stuff (start)
-.hero{
+.hero {
   position: fixed;
   width: 100%;
   background-color: red;
@@ -13,21 +12,23 @@
   z-index: 1;
 }
 
-.hero-name{ // This is just my name
+.hero-name {
+  // This is just my name
   position: fixed;
   z-index: 2;
-  top: 0px;;
+  top: 0;
   left: 46%;
   color: white;
 }
 
-.hero-name > h2{
+.hero-name > h2 {
   font-family: 'Open Sans', sans-serif;
   font-weight: 100;
   font-size: 120%;
 }
 
-.hero-slogan { // This is the main quote
+.hero-slogan {
+  // This is the main quote
   position: fixed;
   z-index: 2;
   top: 20%;
@@ -48,9 +49,8 @@
   font-family: 'Open Sans', sans-serif;
   font-weight: 100;
 }
-  // hero image stuff (end)
-
-  // about section (begins)
+// hero image stuff (end)
+// about section (begins)
 .about {
   position: relative;
   left: 0;
@@ -70,7 +70,6 @@
   z-index: 3;
   text-align: center;
 }
-
 // about section (ends)
 // skills section (begins)
 
@@ -84,18 +83,17 @@
   background-color: green;
 }
 
-  .skills > h2 {
+.skills > h2 {
   font-family: 'Lato', sans-serif;
   font-weight: 100;
   color: black;
   z-index: 3;
   text-align: center;
-  }
-
+}
 // skills section (ends)
 // projects section (begins)
 
-  .projects {
+.projects {
   position: relative;
   width: 100vw;
   height: 100%; // placeholder until markup is done
@@ -103,18 +101,17 @@
   z-index: 3;
   top: 97.2vh;
   background-color: white;
-  }
+}
 
-  .projects > h2 {
+.projects > h2 {
   font-family: 'Lato', sans-serif;
   font-weight: 100;
   color: black;
   z-index: 3;
   text-align: center;
-  }
+}
 
-
-.project-area{
+.project-area {
   display: inline-block;
   width: 100%;
   height: 100%;
@@ -122,35 +119,73 @@
   margin-bottom: 5%;
 }
 
-.project1{
+.project1 {
   width: 80%;
   height: 30%;
   border-radius: 0.7em;
   margin-left: 8.85%;
   margin-bottom: 5%;
-  box-shadow: 0px 10px 18px #888888;
+  box-shadow: 0 10px 18px #888888;
 }
 
-.project2{
+.project2 {
   width: 80%;
   height: 30%;
   border: 5px solid blue;
   border-radius: 0.7em;
   margin-left: 8.85%;
   margin-bottom: 5%;
+  box-shadow: 0 10px 18px #888888;
 }
 
-.project3{
+.project3 {
   width: 80%;
   height: 30%;
   border: 5px solid pink;
   border-radius: 0.7em;
   margin-left: 8.85%;
+  box-shadow: 0 10px 18px #888888;
+}
+
+.collapsible {
+  background-color: black;
+  color: white;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+}
+
+.active,
+.collapsible:hover {
+  background-color:  black;
+}
+
+.collapsible:after {
+  content: '\002B';
+  color: white;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\2212";
+}
+
+.content {
+  padding: 0 18px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  background-color: #f1f1f1;
 }
 // projects section (end)
-
 // footer section (begins)
-.back-to-top{
+.back-to-top {
   position: relative;
   width: 100vw;
   height: 100%;
@@ -159,95 +194,89 @@
   top: 94vh;
   background-color: pink;
 }
-  //footer section (ends)
-
-  // responsive design begins)
-
+//footer section (ends)
+// responsive design begins)
 @media all and (max-width: 1600px) {
-  .hero{
+  .hero {
     background-color: purple;
   }
 
-  .hero-name{
+  .hero-name {
     left: 46%;
   }
 
-  .projects{
+  .projects {
     top: 93.5vh;
   }
 
-  .back-to-top{
+  .back-to-top {
     top: 90vh;
   }
 }
-
 @media all and (max-width: 1280px) {
-  .hero{
+  .hero {
     background-color: teal;
   }
 
-  .hero-name{
+  .hero-name {
     left: 45%;
   }
 
-  .projects{
-      top: 93.5vh;
-  }
-
-  .back-to-top{
-      top: 90vh;
-  }
-
-}
-
-@media all and (max-width: 980px) {
-  .hero{
-    background-color: silver;
-  }
-
-  .about{
-    top: 110vh;
-  }
-
-  .back-to-top{
-  top: 92vh;
-  }
-
-  .hero-name{
-    left: 41%;
-  }
-
-  .projects{
+  .projects {
     top: 93.5vh;
   }
 
-  .back-to-top{
+  .back-to-top {
     top: 90vh;
   }
 }
-
-@media all and (max-width: 700px) {
-  .hero{
-    background-color: orange;
+@media all and (max-width: 980px) {
+  .hero {
+    background-color: silver;
   }
 
-  .hero-name{
-    left: 39.45%;
-  }
-
-  .hero-slogan{
-    top: 14%;
-  }
-
-  .about{
+  .about {
     top: 110vh;
   }
 
-  .projects{
+  .back-to-top {
+    top: 92vh;
+  }
+
+  .hero-name {
+    left: 41%;
+  }
+
+  .projects {
     top: 93.5vh;
   }
 
-  .back-to-top{
+  .back-to-top {
+    top: 90vh;
+  }
+}
+@media all and (max-width: 700px) {
+  .hero {
+    background-color: orange;
+  }
+
+  .hero-name {
+    left: 39.45%;
+  }
+
+  .hero-slogan {
+    top: 14%;
+  }
+
+  .about {
+    top: 110vh;
+  }
+
+  .projects {
+    top: 93.5vh;
+  }
+
+  .back-to-top {
     top: 90vh;
   }
 }
