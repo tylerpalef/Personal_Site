@@ -60,13 +60,13 @@
   height: 30vh;
   z-index: 3;
   top: 110vh; // placeholder until the markup is done
-  background-color: blue;
+  background-color: white;
 }
 
 .about > h2 {
   font-family: 'Lato', sans-serif;
   font-weight: 100;
-  colour: black;
+  color: black;
   z-index: 3;
   text-align: center;
 }
@@ -87,7 +87,7 @@
   .skills > h2 {
   font-family: 'Lato', sans-serif;
   font-weight: 100;
-  colour: black;
+  color: black;
   z-index: 3;
   text-align: center;
   }
@@ -98,7 +98,7 @@
   .projects {
   position: relative;
   width: 100vw;
-  height: 30vh; // placeholder until markup is done
+  height: 100%; // placeholder until markup is done
   left: -8px;
   z-index: 3;
   top: 97.2vh;
@@ -108,11 +108,28 @@
   .projects > h2 {
   font-family: 'Lato', sans-serif;
   font-weight: 100;
-  colour: black;
+  color: black;
   z-index: 3;
   text-align: center;
   }
 
+
+.project-area{
+  display: inline-block;
+  margin: 0 auto;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.project1{
+  width: 80%;
+  height: 30%;
+  border: 5px solid red;
+  border-radius: 0.7em;
+  margin-bottom: 500px;
+
+}
 // projects section (end)
 
 // footer section (begins)
@@ -198,7 +215,7 @@
   }
 
   .hero-name{
-    left: 37.45%;
+    left: 39.45%;
   }
 
   .hero-slogan{
