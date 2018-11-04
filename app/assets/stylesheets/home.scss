@@ -2,6 +2,7 @@
   box-sizing: border-box;
 }
 // hero image stuff (start)
+
 .hero {
   position: fixed;
   width: 100%;
@@ -51,14 +52,16 @@
 }
 // hero image stuff (end)
 // about section (begins)
+
 .about {
   position: relative;
   left: 0;
   padding: 0;
   width: 100vw;
   left: -8px;
-  height: 30vh;
+  height: 100%;
   z-index: 3;
+  padding-bottom: 11.5%;
   top: 110vh; // placeholder until the markup is done
   background-color: white;
 }
@@ -69,6 +72,42 @@
   color: black;
   z-index: 3;
   text-align: center;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  margin: auto;
+  text-align: center;
+}
+
+.title {
+  color: grey;
+  font-size: 18px;
+}
+
+button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+
+a {
+  text-decoration: none;
+  font-size: 22px;
+  color: black;
+}
+
+a:hover,
+button:hover {
+  opacity: 0.7;
 }
 // about section (ends)
 // skills section (begins)
@@ -91,7 +130,7 @@
   text-align: center;
 }
 
-.skill-list{
+.skill-list {
   text-align: center;
   margin-left: 5%;
   margin-right: 5%;
@@ -104,8 +143,6 @@
   margin-left: 0.5%;
   margin-right: 0.5%;
 }
-
-
 // skills section (ends)
 // projects section (begins)
 
@@ -147,7 +184,6 @@
   padding-bottom: 0;
 }
 
-
 .collapsible {
   background-color: black;
   color: white;
@@ -159,12 +195,11 @@
   outline: none;
   font-size: 15px;
   font-family: 'Lato', sans-serif;
-
 }
 
 .active,
 .collapsible:hover {
-  background-color:  black;
+  background-color: black;
 }
 
 .collapsible:after {
@@ -189,23 +224,25 @@
 }
 
 .project-area > .project > img {
-    opacity: 0.7;
-    filter: alpha(opacity=70); /* For IE8 and earlier */
-    width: fill;
-    height: fill;
+  opacity: 0.7;
+  filter: alpha(opacity=70);
+  /* For IE8 and earlier */
+  width: fill;
+  height: fill;
 }
 
 .project-area > .project > img:hover {
-    opacity: 1.0;
-    filter: alpha(opacity=100); /* For IE8 and earlier */
+  opacity: 1.0;
+  filter: alpha(opacity=100);
+  /* For IE8 and earlier */
 }
 
-.project-icon{
+.project-icon {
   text-align: center;
 }
-
 // projects section (end)
 // footer section (begins)
+
 .back-to-top {
   position: relative;
   width: 100vw;
@@ -263,7 +300,6 @@
     margin-right: 0.5%;
   }
 }
-
 @media all and (max-width: 1280px) {
   .hero {
     background-color: teal;
@@ -291,7 +327,7 @@
     height: 100%;
     overflow: hidden;
     margin-bottom: 5%;
-    }
+  }
 
   .project {
     width: 100%;
@@ -310,7 +346,6 @@
     margin-left: 0.5%;
     margin-right: 0.5%;
   }
-
 }
 @media all and (max-width: 980px) {
   .hero {
