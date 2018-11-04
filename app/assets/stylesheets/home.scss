@@ -81,16 +81,7 @@
   margin-top: 5%;
 }
 
-.project-icon > a {
-  text-decoration: none;
-  font-size: 22px;
-  color: black;
-}
 
-
-.project-icon> a:hover {
-  opacity: 0.7;
-}
 // about section (ends)
 // skills section (begins)
 
@@ -199,7 +190,7 @@
 }
 
 .content {
-  padding: 0.5px 18px;
+  padding: 0 18px;
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.2s ease-out;
@@ -223,6 +214,16 @@
 
 .project-icon {
   text-align: center;
+}
+
+.project-icon > a {
+  text-decoration: none;
+  font-size: 22px;
+  color: black;
+}
+
+.project-icon> a:hover {
+  opacity: 0.7;
 }
 // projects section (end)
 // footer section (begins)
@@ -410,6 +411,7 @@
   .project {
     width: 80%;
     height: 30%;
+    margin-left: 8.85%;
   }
 
   .back-to-top {
