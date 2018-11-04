@@ -81,14 +81,14 @@
   margin-top: 5%;
 }
 
-a {
+.project-icon > a {
   text-decoration: none;
   font-size: 22px;
   color: black;
 }
 
-a:hover,
-button:hover {
+
+.project-icon> a:hover {
   opacity: 0.7;
 }
 // about section (ends)
