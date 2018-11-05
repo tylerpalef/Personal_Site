@@ -91,7 +91,9 @@
 }
 
 .about-2{
-  text-align: center;
+  text-align: left;
+  width: 70%;
+  border: 2px red solid;
 }
 
 // about section (ends)
@@ -103,7 +105,7 @@
   height: 100%;
   left: -8px;
   z-index: 3;
-  top: 97.2vh;
+  top: 98.2vh;
   background-color: #f1f1f1;
 }
 
