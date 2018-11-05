@@ -81,6 +81,18 @@
   margin-top: 5%;
 }
 
+.about-wrap{
+  display: grid;
+  grid-template-columns: 60% 40%;
+}
+
+.about-1 {
+  text-align: center;
+}
+
+.about-2{
+  text-align: center;
+}
 
 // about section (ends)
 // skills section (begins)
